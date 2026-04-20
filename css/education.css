@@ -1,0 +1,133 @@
+/* PAGE HERO */
+.page-hero {
+  padding: 9rem 4rem 4rem;
+  max-width: 1100px; margin: 0 auto;
+  animation: fadeUp 0.9s ease both;
+}
+.page__label { font-size: 0.7rem; letter-spacing: 0.35em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.75rem; }
+.page__title { font-family: var(--font-display); font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 400; }
+
+/* SECTIONS */
+section { padding: 4rem; max-width: 1100px; margin: 0 auto; }
+
+.section__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+.section__title::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 48px; height: 1px;
+  background: var(--accent);
+}
+
+/* TIMELINE */
+.timeline { position: relative; padding-left: 2.5rem; }
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 8px; bottom: 8px;
+  width: 1px;
+  background: var(--border);
+}
+.timeline__item { position: relative; margin-bottom: 3rem; }
+.timeline__item::before {
+  content: '';
+  position: absolute;
+  left: -2.5rem;
+  top: 8px;
+  width: 9px; height: 9px;
+  border-radius: 50%;
+  border: 1px solid var(--accent);
+  background: var(--bg);
+  transform: translateX(-4px);
+}
+.timeline__year { font-size: 0.75rem; letter-spacing: 0.2em; color: var(--accent); margin-bottom: 0.4rem; }
+.timeline__title { font-family: var(--font-display); font-size: 1.2rem; margin-bottom: 0.5rem; }
+.timeline__sub { font-size: 0.85rem; color: var(--muted); margin-bottom: 0.75rem; }
+.timeline__text { font-size: 0.92rem; color: var(--muted); max-width: 560px; line-height: 1.8; }
+
+/* TWO COLS */
+.two-cols { display: flex; gap: 4rem; flex-wrap: wrap; }
+.two-cols > div { flex: 1 1 300px; }
+
+/* INFO TABLE */
+.info-table { width: 100%; border-collapse: collapse; }
+.info-table tr { border-bottom: 0.5px solid var(--border); }
+.info-table td { padding: 0.9rem 0; font-size: 0.9rem; }
+.info-table td:first-child { color: var(--muted); width: 42%; }
+.info-table td:last-child { color: var(--text); }
+
+/* REQUIREMENTS BLOCK */
+.req-block {
+  background: var(--surface);
+  border: 0.5px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 4px 4px 0;
+  padding: 1.75rem 2rem;
+  margin-bottom: 1.25rem;
+}
+.req__num { font-size: 0.72rem; letter-spacing: 0.25em; color: var(--accent); text-transform: uppercase; margin-bottom: 0.4rem; }
+.req__title { font-family: var(--font-display); font-size: 1.05rem; margin-bottom: 0.6rem; }
+.req__text { font-size: 0.88rem; color: var(--muted); line-height: 1.8; }
+
+/* INFOMODEL */
+.model__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.entity-box {
+  flex: 1 1 200px;
+  background: var(--surface);
+  border: 0.5px solid var(--border);
+  border-top: 2px solid var(--accent);
+  border-radius: 0 0 4px 4px;
+  padding: 1.25rem 1.5rem;
+}
+.entity__name { font-family: var(--font-display); font-size: 0.95rem; color: var(--accent); margin-bottom: 0.75rem; letter-spacing: 0.05em; }
+.entity__attrs { list-style: none; }
+.entity__attrs li { font-size: 0.82rem; color: var(--muted); padding: 0.25rem 0; border-bottom: 0.5px solid var(--border); }
+.entity__attrs li:last-child { border-bottom: none; }
+.entity__attrs li span { color: var(--accent2); font-size: 0.72rem; margin-left: 0.4rem; }
+
+/* TZ TABLE */
+.tz-table { width: 100%; border-collapse: collapse; margin-top: 0.5rem; }
+.tz-table th {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  font-weight: 600;
+}
+.tz-table td {
+  font-size: 0.88rem;
+  color: var(--muted);
+  padding: 0.85rem 1rem;
+  border-bottom: 0.5px solid var(--border);
+  vertical-align: top;
+}
+.tz-table tr:last-child td { border-bottom: none; }
+.tz-table td:first-child { color: var(--text); font-weight: 400; width: 30%; }
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 2px;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  border: 0.5px solid rgba(30, 95, 212, 0.4);
+  color: var(--accent);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .page-hero, section { padding-left: 1.5rem; padding-right: 1.5rem; }
+}
