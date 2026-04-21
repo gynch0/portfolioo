@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Творчество — Владимир Иванников</title>
+		<meta
+			name="description"
+			content="Творческая страница портфолио Иванникова Владимира — музыка, поэзия, танцы, путешествия и иностранные языки. Фото и видео выступлений."
+		/>
+		<meta
+			name="keywords"
+			content="Иванников Владимир, музыка, танцы, поэзия, путешествия, языки, творчество, портфолио"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/creative.css" />
+	</head>
+	<body>
+		<nav>
+			<div class="nav__inner">
+				<a class="nav__logo" href="index.html">В. Иванников</a>
+				<ul class="nav__links" id="navLinks">
+					<button class="nav__close" id="navClose" aria-label="Закрыть меню">&#10005;</button>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="education.html">Музыка и вокал</a></li>
+					<li><a href="creative.html" class="active">Театр и танцы</a></li>
+				</ul>
+				<button class="nav__burger" id="navBurger" aria-label="Открыть меню">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</nav>
+		<div class="nav__overlay" id="navOverlay"></div>
+
+		<main>
+			<div class="page-hero">
+				<p class="page__label">Творчество</p>
+				<h1 class="page__title">Мой театр и танцы</h1>
+				<p class="page__desc">Участие в театральных постановках и творческих выступлениях.</p>
+			</div>
+
+			<section>
+				<h2 class="section__title">Театр</h2>
+				<div class="photo-grid">
+					<img class="photo-grid__img" src="images/театр1.jpg" alt="Театр 1" />
+					<img class="photo-grid__img" src="images/театр2.jpg" alt="Театр 2" />
+					<img class="photo-grid__img" src="images/театр3.jpg" alt="Театр 3" />
+				</div>
+			</section>
+
+			<section>
+				<h2 class="section__title">Творческие успехи</h2>
+				<div class="photo-grid">
+					<img class="photo-grid__img" src="images/творчество-успех1.jpg" alt="Творческий успех 1" />
+					<img class="photo-grid__img" src="images/творчество-успех2.jpg" alt="Творческий успех 2" />
+					<img class="photo-grid__img" src="images/творчество-успех3.jpg" alt="Творческий успех 3" />
+				</div>
+			</section>
+		</main>
+
+		<div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+			<button class="lightbox__close" id="lightboxClose" aria-label="Закрыть">&#10005;</button>
+			<img class="lightbox__img" id="lightboxImg" src="" alt="" />
+		</div>
+
+		<footer>
+			<p>© 2026 Владимир Иванников · КАИТ №20 · г. Москва</p>
+			<ul class="footer__nav">
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="education.html">Музыка и вокал</a></li>
+				<li><a href="creative.html">Театр и танцы</a></li>
+			</ul>
+		</footer>
+		<script src="js/main.js"></script>
+	</body>
+</html>
