@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Владимир Иванников — Портфолио</title>
+		<meta
+			name="description"
+			content="Портфолио студента Иванникова Владимира — программирование, творчество, путешествия. Студент КАИТ№20, специальность 09.02.07."
+		/>
+		<meta
+			name="keywords"
+			content="Иванников Владимир, портфолио, программирование, КАИТ, информационные системы, студент"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body>
+		<a class="skip-link" href="#main-content">Перейти к содержимому</a>
+
+		<nav aria-label="Основная навигация">
+			<div class="nav__inner">
+				<a
+					class="nav__logo"
+					href="index.html"
+					aria-label="Главная — В. Иванников"
+					>В. Иванников</a
+				>
+				<ul class="nav__links" id="navLinks" role="list">
+					<button class="nav__close" id="navClose" aria-label="Закрыть меню">
+						&#10005;
+					</button>
+					<li><a href="index.html" aria-current="page">Главная</a></li>
+					<li><a href="education.html">Музыка и вокал</a></li>
+					<li><a href="creative.html">Театр и танцы</a></li>
+				</ul>
+				<button
+					class="nav__burger"
+					id="navBurger"
+					aria-label="Открыть меню"
+					aria-expanded="false"
+					aria-controls="navLinks"
+				>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</button>
+			</div>
+		</nav>
+		<div class="nav__overlay" id="navOverlay"></div>
+
+		<main id="main-content">
+			<section class="hero" aria-labelledby="hero-heading">
+				<div class="hero__inner">
+					<div class="hero__text">
+						<p class="hero__label">Студент · КАИТ №20 · Москва</p>
+						<h1 class="hero__name" id="hero-heading">
+							Иванников<br /><span>Владимир</span>
+						</h1>
+						<p class="hero__desc">
+							Я окончил школу хорошистом . После экзаменов Я поступил в колледж
+							КАИТ№20 в 2024 году на факультет ДИДЖИТАЛ.
+						</p>
+					</div>
+					<div class="hero__avatar">
+						<img
+							src="images/фото-для-ст-танцы.jpg"
+							alt="Владимир Иванников, фото"
+							width="320"
+							height="320"
+						/>
+					</div>
+				</div>
+			</section>
+
+			<hr class="divider" />
+
+			<section aria-labelledby="hobbies-heading">
+				<p class="section__label" aria-hidden="true">Обо мне</p>
+				<h2 class="section__title" id="hobbies-heading">Мои увлечения</h2>
+				<div class="cards__grid" role="list">
+					<div class="card" role="listitem">
+						<div class="card__icon" aria-hidden="true">💻</div>
+						<p class="card__title">Программирование</p>
+						<p class="card__text">
+							Поступил в КАИТ №20 в 2024 году на факультет ДИДЖИТАЛ,
+							специальность 09.02.07. Изучаю программирование — мне это
+							нравится, всегда интересуюсь чем-то новым. Это открывает для меня
+							новые возможности.
+						</p>
+					</div>
+					<div class="card" role="listitem">
+						<div class="card__icon" aria-hidden="true">🎵</div>
+						<p class="card__title">Музыка и танцы</p>
+						<p class="card__text">
+							Занимаюсь музыкой, поэзией и танцами. Регулярно выступаю на
+							сценических площадках, постоянно совершенствую своё мастерство.
+						</p>
+					</div>
+					<div class="card" role="listitem">
+						<div class="card__icon" aria-hidden="true">🌍</div>
+						<p class="card__title">Языки и путешествия</p>
+						<p class="card__text">
+							Изучаю иностранные языки — это открывает возможности узнавать
+							культуры разных стран, знакомиться с новыми людьми и расширять
+							кругозор.
+						</p>
+					</div>
+				</div>
+			</section>
+			<section aria-labelledby="myskills-heading">
+				<p class="section__label" aria-hidden="true">Компетенции</p>
+				<h2 class="section__title" id="myskills-heading">Мои навыки</h2>
+				<div class="skillgroup__grid">
+					<div class="skillgroup">
+						<p class="skillgroup__title">Языки программирования</p>
+						<ul class="skillgroup__list">
+							<li class="skillgroup__item">
+								<span class="skillgroup__name">Python</span>
+								<span class="skillgroup__desc"
+									>скрипты автоматизации, Pandas, Flask</span
+								>
+							</li>
+							<li class="skillgroup__item">
+								<span class="skillgroup__name">JavaScript</span>
+								<span class="skillgroup__desc"
+									>основы синтаксиса, работа с DOM</span
+								>
+							</li>
+							<li class="skillgroup__item">
+								<span class="skillgroup__name">SQL</span>
+								<span class="skillgroup__desc">запросы, проектирование БД</span>
+							</li>
+						</ul>
+					</div>
+					<div class="skillgroup">
+						<p class="skillgroup__title">Веб-технологии</p>
+						<ul class="skillgroup__list">
+							<li class="skillgroup__item">
+								<span class="skillgroup__name">HTML5 / CSS3</span>
+								<span class="skillgroup__desc">семантическая разметка</span>
+							</li>
+							<li class="skillgroup__item">
+								<span class="skillgroup__name">Адаптивная вёрстка</span>
+								<span class="skillgroup__desc">Flexbox, медиа-запросы</span>
+							</li>
+							<li class="skillgroup__item">
+								<span class="skillgroup__name">React</span>
+								<span class="skillgroup__desc"
+									>основы, изучение в процессе</span
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="skillgroup">
+						<p class="skillgroup__title">Инструменты и платформы</p>
+						<ul class="skillgroup__list">
+							<li class="skillgroup__item">
+								<span class="skillgroup__name">Git / GitHub</span>
+								<span class="skillgroup__desc"
+									>контроль версий, работа с репозиториями</span
+								>
+							</li>
+							<li class="skillgroup__item">
+								<span class="skillgroup__name">Visual Studio Code</span>
+								<span class="skillgroup__desc">основной редактор</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="skills__extra">
+					<div class="skills__extra-block">
+						<p class="skills__extra-title">Личностные качества</p>
+						<div class="skills__tags">
+							<span class="skill__tag">Ответственность</span>
+							<span class="skill__tag">Дисциплинированность</span>
+							<span class="skill__tag">Способность к самообучению</span>
+							<span class="skill__tag">Коммуникабельность</span>
+							<span class="skill__tag">Организованность</span>
+						</div>
+					</div>
+					<div class="skills__extra-block skills__extra-block--goal">
+						<p class="skills__extra-title">Цель</p>
+						<p class="skills__extra-text">Развитие в сфере веб‑разработки и программирования, участие в реальных проектах для закрепления практических навыков.</p>
+					</div>
+				</div>
+			</section>
+
+			<hr class="divider" />
+
+			<section aria-labelledby="skills-heading">
+				<h2 class="section__title" id="skills-heading">
+					С помощью каких инструментов был создан этот сайт
+				</h2>
+				<ul class="skills__list" aria-label="Список инструментов">
+					<li class="skill__tag">HTML</li>
+					<li class="skill__tag">CSS</li>
+					<li class="skill__tag">JavaScript</li>
+					<li class="skill__tag">Flexbox</li>
+					<li class="skill__tag">Gridbox</li>
+					<li class="skill__tag">Visual Studio</li>
+				</ul>
+			</section>
+
+			<hr class="divider" />
+
+			<section aria-labelledby="map-heading">
+				<p class="section__label" aria-hidden="true">Расположение</p>
+				<h2 class="section__title" id="map-heading">КАИТ №20 · Москва</h2>
+				<div class="map__wrap">
+					<iframe
+						src="https://www.openstreetmap.org/export/embed.html?bbox=37.6968%2C55.8068%2C37.7168%2C55.8268&layer=mapnik&marker=55.816751%2C37.706763"
+						class="map__iframe"
+						allowfullscreen
+						loading="lazy"
+						title="Карта: КАИТ №20, Москва"
+					></iframe>
+				</div>
+			</section>
+
+			<hr class="divider" />
+		</main>
+
+		<footer aria-label="Подвал сайта">
+			<p>© 2026 Владимир Иванников · КАИТ №20 · г. Москва</p>
+			<nav aria-label="Навигация в подвале">
+				<ul class="footer__nav" role="list">
+					<li><a href="index.html" aria-current="page">Главная</a></li>
+					<li><a href="education.html">Музыка и вокал</a></li>
+					<li><a href="creative.html">Театр и танцы</a></li>
+				</ul>
+			</nav>
+		</footer>
+		<script src="js/main.js"></script>
+	</body>
+</html>
